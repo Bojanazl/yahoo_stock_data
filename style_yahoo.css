@@ -1,0 +1,26 @@
+/*css styles for containers, buttons and columns*/
+
+/*for containers*/
+div[data-testid="stHorizontalBlock"]>div {
+    background-color: #f5f3f65f;
+    border-color: #d279eb5f;
+    ;
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: 1.5rex;
+}
+
+/*for buttons*/
+.element-container:has(#button-after) {
+    display: none;
+}
+
+.element-container:has(#button-after)+div button {
+    background-color: #d279eb5f;
+}
+
+/*for columns*/
+div[data-testid="column"]>div {
+    justify-content: center;
+    padding-top: 25px;
+}
